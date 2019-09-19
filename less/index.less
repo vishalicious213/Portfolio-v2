@@ -9,6 +9,29 @@
 
 header {
     background-color: @headerColor;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+        .social {
+            letter-spacing: 2rem;
+
+            a {
+                text-decoration: none;
+                color: @headerPColor;
+            } // a
+
+            a:hover {
+                color: white;
+            }
+        } // .social
+    } // div
 
     p {
         color: @headerPColor;
@@ -18,21 +41,14 @@ header {
         letter-spacing: 0.1em;
         line-height: 2;
         text-transform: uppercase;
-        // transform: translateX(0px);
-        // filter: blur(0px);
-        // opacity: 1;
-        // transition: opacity 0.5s ease 0.8s, transform 0.5s ease, filter 0.25s ease;
-    }
-}
-
-header, section {
-    padding: 1rem;
-}
+    } // p
+} // header
 
 section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 
     .sectionInfo {
         width: 45%;

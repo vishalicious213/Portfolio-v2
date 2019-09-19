@@ -136,7 +136,6 @@ h3 {
   text-transform: uppercase;
   margin: 0px 0px 1rem;
   padding-bottom: 1.5rem;
-  max-width: 980px;
   border-bottom: 1px solid gray;
 }
 h3 {
@@ -149,7 +148,6 @@ p {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 200;
   line-height: 1.5;
-  max-width: 980px;
 }
 .learn {
   color: white;
@@ -160,6 +158,25 @@ p {
 }
 header {
   background-color: #484C5A;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+header div .social {
+  letter-spacing: 2rem;
+}
+header div .social a {
+  text-decoration: none;
+  color: #c0c1c6;
+}
+header div .social a:hover {
+  color: white;
 }
 header p {
   color: #c0c1c6;
@@ -170,14 +187,11 @@ header p {
   line-height: 2;
   text-transform: uppercase;
 }
-header,
-section {
-  padding: 1rem;
-}
 section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 section .sectionInfo {
   width: 45%;

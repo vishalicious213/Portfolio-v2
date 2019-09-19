@@ -29,17 +29,38 @@ header, section {
     padding: 1rem;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sectionInfo {
+        width: 45%;
+    }
+
+    .pictureFrame {
+        max-width: 30rem;
+        margin: 3rem;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        } // img
+    } // .pictureFrame
+} // section
+
 .frontend {
-    color: white;
     background-color: @frontEndColor;
 }
 
 .backend {
-    color: white;
     background-color: @backEndColor;
 }
 
 .interests {
-    color: white;
     background-color: @interestsColor;
+}
+
+.right {
+    text-align: right;
 }

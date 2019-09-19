@@ -49,6 +49,8 @@ table {
 
 // MAIN FORMATTING INFO
 
+@maxWidth: 980px;
+
 h2, h3 {
 	color: white;
 	font-size: 1.5rem;
@@ -58,7 +60,7 @@ h2, h3 {
     text-transform: uppercase;
 	margin: 0px 0px 1rem;
 	padding-bottom: 1.5rem;
-	max-width: 980px;
+	max-width: @maxWidth;
 	border-bottom: 1px solid gray;
 }
 
@@ -73,7 +75,7 @@ p {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-weight: 200;
 	line-height: 1.5;
-	max-width: 980px;
+	max-width: @maxWidth;
 }
 
 .learn {

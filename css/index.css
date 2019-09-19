@@ -174,15 +174,31 @@ header,
 section {
   padding: 1rem;
 }
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .sectionInfo {
+  width: 45%;
+}
+section .pictureFrame {
+  max-width: 30rem;
+  margin: 3rem;
+}
+section .pictureFrame img {
+  width: 100%;
+  border-radius: 50%;
+}
 .frontend {
-  color: white;
   background-color: #4c5c96;
 }
 .backend {
-  color: white;
   background-color: #45558d;
 }
 .interests {
-  color: white;
   background-color: #3f4e85;
+}
+.right {
+  text-align: right;
 }

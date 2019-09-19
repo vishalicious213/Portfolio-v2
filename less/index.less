@@ -1,21 +1,45 @@
-// #484c5a
-// darkslategray
-
-// #4c5c96
-// darkslateblue
-
-// #45558d
-// darkslateblue
-
-// #3f4e85
-// darkslateblue
-
-// #2e3141
-// darkslategray
-
-// #353849
-// darkslategray
-
-// gradient
-
 @import "less/reset.less";
+@headerColor:        #484C5A;   // darkslategray 1
+@headerPColor:       #c0c1c6;   // silver
+@frontEndColor:      #4c5c96;   // darkslateblue 1
+@backEndColor:       #45558d;   // darkslateblue 2
+@interestsColor:     #3f4e85;   // darkslateblue 3
+@selectedWorksColor: #2e3141;   // darkslategray 2
+@selectedPanelColor: #353849;   // darkslategray 3
+
+header {
+    background-color: @headerColor;
+
+    p {
+        color: @headerPColor;
+        font-size: .8em;
+        font-family: Raleway, Helvetica, sans-serif;
+        font-weight: 200;
+        letter-spacing: 0.1em;
+        line-height: 2;
+        text-transform: uppercase;
+        // transform: translateX(0px);
+        // filter: blur(0px);
+        // opacity: 1;
+        // transition: opacity 0.5s ease 0.8s, transform 0.5s ease, filter 0.25s ease;
+    }
+}
+
+header, section {
+    padding: 1rem;
+}
+
+.frontend {
+    color: white;
+    background-color: @frontEndColor;
+}
+
+.backend {
+    color: white;
+    background-color: @backEndColor;
+}
+
+.interests {
+    color: white;
+    background-color: @interestsColor;
+}

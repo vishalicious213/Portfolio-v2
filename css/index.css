@@ -163,18 +163,25 @@ p {
 }
 header {
   background-color: #2d3040;
-  display: flex;
-  justify-content: center;
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 header div {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  text-align: center;
+}
+header div h1 {
+  width: 90%;
 }
 header div .social {
-  letter-spacing: 2rem;
+  font-size: 1.25rem;
+  width: 50%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 header div .social a {
   text-decoration: none;
@@ -192,20 +199,28 @@ header p {
   line-height: 2;
   text-transform: uppercase;
 }
-section {
+.frontend,
+.backend,
+.interests {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
 }
-section .sectionInfo {
+.frontend .sectionInfo,
+.backend .sectionInfo,
+.interests .sectionInfo {
   width: 45%;
 }
-section .pictureFrame {
+.frontend .pictureFrame,
+.backend .pictureFrame,
+.interests .pictureFrame {
   max-width: 30rem;
   margin: 3rem;
 }
-section .pictureFrame img {
+.frontend .pictureFrame img,
+.backend .pictureFrame img,
+.interests .pictureFrame img {
   width: 100%;
   border-radius: 50%;
 }

@@ -54,7 +54,7 @@ header {
     } // p
 } // header
 
-.frontend, .backend, .interests {
+.frontend, .backend, .interests, .selectedWorks {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +73,7 @@ header {
             border-radius: 50%;
         } // img
     } // .pictureFrame
-} // .frontend, .backend, .interests
+} // .frontend, .backend, .interests .selectedWorks
 
 .frontend {
     background-color: @frontEndColor;
@@ -111,6 +111,52 @@ header {
     }
 }
 
+.selectedWorks {
+    background-color: @selectedWorksColor;
+
+    .sectionInfo {
+        width: 80%;
+        flex-direction: column;
+
+        p {
+            margin-bottom: 2.5rem;
+        }
+
+        .works {
+            display: flex;
+            flex-flow: wrap;
+
+            .container {
+                background-color: @selectedPanelColor;
+                width: 45%;
+                margin: 1rem;
+                
+                .screenshot img {
+                    width: 100%;
+                    border-radius: .25rem .25rem 0 0;
+                    margin-bottom: 1rem;
+                } // .screenshot img
+                
+                .workInfo {
+                    padding: 1rem;                    
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 100%;
+                } // @media
+            } // .container
+        } // .works
+    } // .sectionInfo
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+
+        .sectionInfo {
+            width: 75%;
+        }
+    }
+}
+
 .right {
     text-align: right;
 }
@@ -132,4 +178,10 @@ header {
     width: 100%;
     height: 5rem;
     background: linear-gradient(176deg, @backEndColor 50%, @interestsColor 50%);
+}
+
+.switchI2sW { // frontend to backend color switch
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(4deg, @selectedWorksColor 50%, @interestsColor 50%);
 }

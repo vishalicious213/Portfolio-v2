@@ -154,7 +154,8 @@ p {
   font-weight: 200;
   line-height: 1.5;
 }
-.learn {
+.learn,
+.browse {
   color: white;
   font-size: 0.8rem;
   font-weight: 600;
@@ -163,13 +164,15 @@ p {
 }
 header {
   background-color: #2d3040;
+  display: flex;
+  justify-content: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 header div {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   align-items: center;
   text-align: center;
 }
@@ -212,13 +215,13 @@ header p {
 .backend .sectionInfo,
 .interests .sectionInfo,
 .selectedWorks .sectionInfo {
-  width: 45%;
+  width: 55%;
 }
 .frontend .pictureFrame,
 .backend .pictureFrame,
 .interests .pictureFrame,
 .selectedWorks .pictureFrame {
-  max-width: 30rem;
+  width: 25%;
   margin: 3rem;
 }
 .frontend .pictureFrame img,
@@ -265,7 +268,7 @@ header p {
   background-color: #2e3141;
 }
 .selectedWorks .sectionInfo {
-  width: 80%;
+  width: 85%;
   flex-direction: column;
 }
 .selectedWorks .sectionInfo p {
@@ -293,6 +296,14 @@ header p {
   .selectedWorks .sectionInfo .works .container {
     width: 100%;
   }
+}
+.selectedWorks .browse {
+  margin-left: 1rem;
+  border: 2px solid #484A59;
+  text-align: center;
+  width: 10%;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 @media screen and (max-width: 600px) {
   .selectedWorks {

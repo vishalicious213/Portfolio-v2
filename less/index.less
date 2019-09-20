@@ -125,6 +125,19 @@ header {
             margin-bottom: 2.5rem;
         }
 
+        .chevron {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-right: .5rem;
+            border: 2px solid @browseButtonColor;
+            padding: .25rem .5rem;
+            border-radius: 50%;
+        }
+
+        .chevron:hover {
+            background-color: @browseButtonColor;
+        }
+
         .works {
             display: flex;
             flex-flow: wrap;
@@ -156,9 +169,13 @@ header {
         margin-left: 1rem;
         border: 2px solid @browseButtonColor;
         text-align: center;
-        width: 10%;
-        padding: 1rem;
-        border-radius: .5rem;
+        width: 100px;
+        padding: .5rem 1rem .5rem 1rem;
+        border-radius: .25rem;
+    }
+
+    .browse:hover {
+        background-color: @selectedPanelColor;
     }
 
     @media screen and (max-width: 600px) {

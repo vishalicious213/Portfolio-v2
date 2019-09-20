@@ -279,16 +279,17 @@ header p {
   background-color: #353849;
   width: 45%;
   margin: 1rem;
+  border-radius: 0.25rem;
 }
 .selectedWorks .sectionInfo .works .container .screenshot img {
   width: 100%;
-  border-radius: 0.25rem 0.25rem 0 0;
   margin-bottom: 1rem;
+  border-radius: 0.25rem 0.25rem 0 0;
 }
 .selectedWorks .sectionInfo .works .container .workInfo {
   padding: 1rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 840px) {
   .selectedWorks .sectionInfo .works .container {
     width: 100%;
   }

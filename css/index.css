@@ -227,11 +227,35 @@ header p {
 .frontend {
   background-color: #4c5c96;
 }
+@media screen and (max-width: 600px) {
+  .frontend {
+    flex-direction: column-reverse;
+  }
+  .frontend .sectionInfo {
+    width: 75%;
+  }
+}
 .backend {
   background-color: #45558d;
 }
+@media screen and (max-width: 600px) {
+  .backend {
+    flex-direction: column;
+  }
+  .backend .sectionInfo {
+    width: 75%;
+  }
+}
 .interests {
   background-color: #3f4e85;
+}
+@media screen and (max-width: 600px) {
+  .interests {
+    flex-direction: column-reverse;
+  }
+  .interests .sectionInfo {
+    width: 75%;
+  }
 }
 .right {
   text-align: right;

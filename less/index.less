@@ -77,14 +77,38 @@ header {
 
 .frontend {
     background-color: @frontEndColor;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column-reverse;
+
+        .sectionInfo {
+            width: 75%;
+        }
+    }
 }
 
 .backend {
     background-color: @backEndColor;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+
+        .sectionInfo {
+            width: 75%;
+        }
+    }
 }
 
 .interests {
     background-color: @interestsColor;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column-reverse;
+
+        .sectionInfo {
+            width: 75%;
+        }
+    }
 }
 
 .right {

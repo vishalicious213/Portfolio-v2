@@ -161,6 +161,7 @@ p {
   font-weight: 600;
   letter-spacing: 0.1em;
   margin-top: 2rem;
+  width: 50%;
 }
 header {
   background-color: #2d3040;
@@ -271,10 +272,17 @@ header p {
   width: 85%;
   flex-direction: column;
 }
-.selectedWorks .sectionInfo p {
-  margin-bottom: 2.5rem;
+.selectedWorks .sectionInfo .techBox {
+  display: flex;
+  align-items: baseline;
 }
-.selectedWorks .sectionInfo .chevron {
+.selectedWorks .sectionInfo .techBox .tech {
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+  text-align: right;
+  width: 50%;
+}
+.selectedWorks .sectionInfo .techBox .chevron {
   font-size: 1rem;
   font-weight: 600;
   margin-right: 0.5rem;
@@ -282,7 +290,7 @@ header p {
   padding: 0.25rem 0.5rem;
   border-radius: 50%;
 }
-.selectedWorks .sectionInfo .chevron:hover {
+.selectedWorks .sectionInfo .techBox .chevron:hover {
   background-color: #484A59;
 }
 .selectedWorks .sectionInfo .works {
@@ -293,6 +301,7 @@ header p {
   background-color: #353849;
   width: 45%;
   margin: 1rem;
+  margin-top: 2.5rem;
   border-radius: 0.25rem;
 }
 .selectedWorks .sectionInfo .works .container .screenshot img {
@@ -315,6 +324,10 @@ header p {
   width: 100px;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.25rem;
+}
+.selectedWorks .browse a {
+  text-decoration: none;
+  color: white;
 }
 .selectedWorks .browse:hover {
   background-color: #353849;
@@ -349,4 +362,7 @@ header p {
   width: 100%;
   height: 5rem;
   background: linear-gradient(4deg, #2e3141 50%, #3f4e85 50%);
+}
+.htmlWeb {
+  background-color: #3f4e85;
 }

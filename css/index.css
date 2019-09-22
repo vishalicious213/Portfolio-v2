@@ -281,12 +281,14 @@ header p {
   align-items: baseline;
 }
 .selectedWorks .sectionInfo .techBox .tech {
+  border-left: 1px solid lightslategray;
   font-size: 1.5rem;
-  letter-spacing: 1rem;
-  text-align: right;
-  width: 50%;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  text-align: center;
+  width: 15%;
 }
-.selectedWorks .sectionInfo .techBox .chevron {
+.selectedWorks .sectionInfo .chevron {
   font-size: 1rem;
   font-weight: 600;
   margin-right: 0.5rem;
@@ -294,7 +296,7 @@ header p {
   padding: 0.25rem 0.5rem;
   border-radius: 50%;
 }
-.selectedWorks .sectionInfo .techBox .chevron:hover {
+.selectedWorks .sectionInfo .chevron:hover {
   background-color: #484A59;
 }
 .selectedWorks .sectionInfo .works {

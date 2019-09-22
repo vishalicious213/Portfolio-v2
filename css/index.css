@@ -143,6 +143,10 @@ h1 {
   font-size: 2rem;
   font-weight: 800;
 }
+h1 a {
+  text-decoration: none;
+  color: white;
+}
 h3 {
   font-size: 1rem;
   border-bottom: 1px solid lightslategray;

@@ -303,6 +303,7 @@ header p {
 }
 .selectedWorks .sectionInfo .works .container {
   background-color: #353849;
+  border: 0.5px solid #2e3141;
   width: 45%;
   margin: 1rem;
   margin-top: 2.5rem;
@@ -320,6 +321,9 @@ header p {
   .selectedWorks .sectionInfo .works .container {
     width: 100%;
   }
+}
+.selectedWorks .sectionInfo .works .container:hover {
+  border: 0.5px solid silver;
 }
 .selectedWorks .browse {
   margin-left: 1rem;

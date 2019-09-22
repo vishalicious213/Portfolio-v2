@@ -153,6 +153,7 @@ header {
 
             .container {
                 background-color: @selectedPanelColor;
+                border: .5px solid @selectedWorksColor;
                 width: 45%;
                 margin: 1rem;
                 margin-top: 2.5rem;
@@ -172,6 +173,10 @@ header {
                     width: 100%;
                 } // @media
             } // .container
+
+            .container:hover {
+                border: .5px solid silver;
+            }
         } // .works
     } // .sectionInfo
 

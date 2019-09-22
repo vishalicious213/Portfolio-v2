@@ -158,14 +158,14 @@ li {
 b {
   font-weight: 600;
 }
-.learn,
+.visit,
+.view,
 .browse {
   color: white;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   margin-top: 2rem;
-  width: 50%;
 }
 header {
   background-color: #2d3040;
@@ -288,15 +288,25 @@ header p {
   text-align: center;
   width: 15%;
 }
-.selectedWorks .sectionInfo .chevron {
+.selectedWorks .sectionInfo .offsite {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 85%;
+}
+.selectedWorks .sectionInfo .offsite .chevron {
   font-size: 1rem;
   font-weight: 600;
   margin-right: 0.5rem;
   border: 2px solid #484A59;
-  padding: 0.25rem 0.5rem;
+  padding: 0.15rem 0.5rem;
   border-radius: 50%;
 }
-.selectedWorks .sectionInfo .chevron:hover {
+.selectedWorks .sectionInfo .offsite .git {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.4rem;
+}
+.selectedWorks .sectionInfo .offsite .chevron:hover {
   background-color: #484A59;
 }
 .selectedWorks .sectionInfo .works {

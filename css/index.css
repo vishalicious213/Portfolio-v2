@@ -332,6 +332,7 @@ header p {
 }
 .selectedWorks .sectionInfo .works .container .workInfo {
   padding: 1rem;
+  display: grid;
 }
 @media screen and (max-width: 840px) {
   .selectedWorks .sectionInfo .works .container {

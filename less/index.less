@@ -1,15 +1,15 @@
 @import "less/reset.less";
-@headerColor:        #2d3040;   // darkslategray 1
-@headerPColor:       #c0c1c6;   // silver
-@frontEndColor:      #4c5c96;   // darkslateblue 1
-@backEndColor:       #45558d;   // darkslateblue 2
-@interestsColor:     #3f4e85;   // darkslateblue 3
-@selectedWorksColor: #2e3141;   // darkslategray 2
-@selectedPanelColor: #353849;   // darkslategray 3
-@browseButtonColor:  #484A59;   // darkslategray 4
+@gray1:  #2d3040;   // header
+@silver: #c0c1c6;   // headerP
+@blue1:  #4c5c96;   // front
+@blue2:  #45558d;   // back
+@blue3:  #3f4e85;   // interest
+@gray2:  #2e3141;   // selectedWorks
+@gray3:  #353849;   // selectedPanel
+@gray4:  #484A59;   // browse
 
 header {
-    background-color: @headerColor;
+    background-color: @gray1;
     display: flex;
     justify-content: center;
     padding-top: 4rem;
@@ -35,7 +35,7 @@ header {
 
             a {
                 text-decoration: none;
-                color: @headerPColor;
+                color: @silver;
             } // a
 
             a:hover {
@@ -45,7 +45,7 @@ header {
     } // div
 
     p {
-        color: @headerPColor;
+        color: @silver;
         font-size: .8em;
         font-family: Raleway, Helvetica, sans-serif;
         font-weight: 200;
@@ -78,7 +78,7 @@ header {
 } // .frontend, .backend, .interests .selectedWorks
 
 .frontend {
-    background-color: @frontEndColor;
+    background-color: @blue1;
 
     @media screen and (max-width: 600px) {
         flex-direction: column-reverse;
@@ -90,7 +90,7 @@ header {
 }
 
 .backend {
-    background-color: @backEndColor;
+    background-color: @blue2;
 
     @media screen and (max-width: 600px) {
         flex-direction: column;
@@ -102,7 +102,7 @@ header {
 }
 
 .interests {
-    background-color: @interestsColor;
+    background-color: @blue3;
 
     @media screen and (max-width: 600px) {
         flex-direction: column-reverse;
@@ -114,7 +114,7 @@ header {
 }
 
 .selectedWorks {
-    background-color: @selectedWorksColor;
+    background-color: @gray2;
     // width: 100%;
 
     .sectionInfo {
@@ -147,7 +147,7 @@ header {
                 font-size: 1rem;
                 font-weight: 600;
                 margin-right: .5rem;
-                border: 2px solid @browseButtonColor;
+                border: 2px solid @gray4;
                 padding: .15rem .5rem;
                 border-radius: 50%;
             }
@@ -158,18 +158,17 @@ header {
             }
     
             .chevron:hover {
-                background-color: @browseButtonColor;
+                background-color: @gray4;
             }
         } // .offsite
-
 
         .works {
             display: flex;
             flex-flow: wrap;
 
             .container {
-                background-color: @selectedPanelColor;
-                border: .5px solid @selectedWorksColor;
+                background-color: @gray3;
+                border: .5px solid @gray2;
                 width: 30%;
                 margin: 1rem;
                 margin-top: 2.5rem;
@@ -203,7 +202,7 @@ header {
 
     .browse {
         margin-left: 1rem;
-        border: 2px solid @browseButtonColor;
+        border: 2px solid @gray4;
         text-align: center;
         width: 100px;
         padding: .5rem 1rem .5rem 1rem;
@@ -216,7 +215,7 @@ header {
     }
 
     .browse:hover {
-        background-color: @selectedPanelColor;
+        background-color: @gray3;
     }
 
     @media screen and (max-width: 600px) {
@@ -228,6 +227,21 @@ header {
     } // @media
 } // .selectedWorks
 
+footer {
+    // border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @gray3;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .footerDiv {
+        // border: 1px solid red;
+        width: 82.5%;
+    }
+} // footer
+
 .right {
     text-align: right;
 }
@@ -235,40 +249,46 @@ header {
 .switchH2F { // header to frontend color switch
     width: 100%;
     height: 5rem;
-    background: linear-gradient(176deg, @headerColor 50%, @frontEndColor 50%);
+    background: linear-gradient(176deg, @gray1 50%, @blue1 50%);
     // background: linear-gradient(176deg, red 50%, blue 50%);
 }
 
 .switchF2B { // frontend to backend color switch
     width: 100%;
     height: 5rem;
-    background: linear-gradient(4deg, @backEndColor 50%, @frontEndColor 50%);
+    background: linear-gradient(4deg, @blue2 50%, @blue1 50%);
 }
 
 .switchB2I { // backend to interests color switch
     width: 100%;
     height: 5rem;
-    background: linear-gradient(176deg, @backEndColor 50%, @interestsColor 50%);
+    background: linear-gradient(176deg, @blue2 50%, @blue3 50%);
 }
 
 .switchI2sW { // frontend to backend color switch
     width: 100%;
     height: 5rem;
-    background: linear-gradient(4deg, @selectedWorksColor 50%, @interestsColor 50%);
+    background: linear-gradient(4deg, @gray2 50%, @blue3 50%);
+}
+
+.switchWorks2Footer {
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(176deg, @gray2 50%, @gray3 50%);
 }
 
 // HTML WEBSITES PAGE -----------------------------
 
 .htmlWebHeader {
-    background-color: @interestsColor;
+    background-color: @blue3;
 }
 
 .htmlWebIntro {
-    background-color: @backEndColor;
+    background-color: @blue2;
 }
 
 .htmlWebText {
-    background-color: @frontEndColor;
+    background-color: @blue1;
 
     h3 {
         margin-top: 1rem;
@@ -278,17 +298,17 @@ header {
 .switchB2Iflipped { // interests to backend color switch
     width: 100%;
     height: 5rem;
-    background: linear-gradient(4deg, @backEndColor 50%, @interestsColor 50%);
+    background: linear-gradient(4deg, @blue2 50%, @blue3 50%);
 }
 
 .switchF2sW { // backend to selectedWorks color switch
     width: 100%;
     height: 5rem;
-    background: linear-gradient(4deg, @selectedWorksColor 50%, @frontEndColor 50%);
+    background: linear-gradient(4deg, @gray2 50%, @blue1 50%);
 }
 
 .switchB2F { // backend to selectedWorks color switch
     width: 100%;
     height: 5rem;
-    background: linear-gradient(176deg, @backEndColor 50%, @frontEndColor 50%);
+    background: linear-gradient(176deg, @blue2 50%, @blue1 50%);
 }

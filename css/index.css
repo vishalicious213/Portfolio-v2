@@ -386,27 +386,27 @@ footer .footerDiv {
 }
 .switchH2F {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(to right bottom, #2d3040 49%, #4c5c96 50%);
 }
 .switchF2B {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(to right top, #45558d 49%, #4c5c96 50%);
 }
 .switchB2I {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(to right bottom, #45558d 49%, #3f4e85 50%);
 }
 .switchI2sW {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(to right top, #2e3141 49%, #3f4e85 50%);
 }
 .switchWorks2Footer {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(to right bottom, #2e3141 49%, #353849 50%);
 }
 .htmlWebHeader {
@@ -423,16 +423,16 @@ footer .footerDiv {
 }
 .switchB2Iflipped {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(to right top, #45558d 49%, #3f4e85 50%);
 }
 .switchF2sW {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(to right top, #2e3141 49%, #4c5c96 50%);
 }
 .switchB2F {
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(to right bottom, #45558d 49%, #4c5c96 50%);
 }

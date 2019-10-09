@@ -302,6 +302,12 @@ header p {
   text-align: center;
   width: 15%;
 }
+.selectedWorks .sectionInfo .techBox .nounImg {
+  width: 1rem;
+  background-color: #c0c1c6;
+  border: 2.75px solid #c0c1c6;
+  border-radius: 15%;
+}
 .selectedWorks .sectionInfo .offsite {
   display: flex;
   align-items: baseline;

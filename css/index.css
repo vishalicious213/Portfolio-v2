@@ -178,6 +178,10 @@ header {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+header .menuButton {
+  width: 2rem;
+  height: 2rem;
+}
 header div {
   display: flex;
   flex-direction: column;

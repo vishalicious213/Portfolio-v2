@@ -231,7 +231,8 @@ header p {
 .interests .pictureFrame,
 .selectedWorks .pictureFrame {
   width: 25%;
-  margin: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 .frontend .pictureFrame img,
 .backend .pictureFrame img,
@@ -250,6 +251,9 @@ header p {
   .frontend .sectionInfo {
     width: 75%;
   }
+  .frontend .pictureFrame {
+    margin-bottom: 2rem;
+  }
 }
 .backend {
   background-color: #45558d;
@@ -261,6 +265,9 @@ header p {
   .backend .sectionInfo {
     width: 75%;
   }
+  .backend .pictureFrame {
+    margin-bottom: 2rem;
+  }
 }
 .interests {
   background-color: #3f4e85;
@@ -271,6 +278,9 @@ header p {
   }
   .interests .sectionInfo {
     width: 75%;
+  }
+  .interests .pictureFrame {
+    margin-bottom: 2rem;
   }
 }
 .selectedWorks {

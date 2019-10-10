@@ -10,7 +10,7 @@ menuButton.addEventListener("mouseout", (event) => {
 })
 
 // create menu
-const anchor = document.querySelector("header div");
+const anchor = document.querySelector(".menuDiv");
 
 function createMenu() {
     const menu = document.createElement("div");
@@ -24,6 +24,8 @@ function createMenu() {
     menuItems.appendChild(menuItem2);
     menuItems.appendChild(menuItem3);
 
+    menu.classList.add("menu");
+
     menuItem1.textContent = "HOME";
     menuItem2.textContent = "HTML / CSS WEBSITES";
     menuItem3.textContent = "JAVASCRIPT & DOM SITES";
@@ -32,11 +34,13 @@ function createMenu() {
     console.log(menuItem1.href);
 
     menuButton.addEventListener("click", (event) => {
-
+        anchor.appendChild(menu);
+        menu.classList.toggle("menu");
+        menu.classList.toggle("menu-toggle");
     })
 
-    anchor.appendChild(menu);
+    // anchor.appendChild(menu);
     return menu;
 }
 
-// createMenu();
+createMenu();

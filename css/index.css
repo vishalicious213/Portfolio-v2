@@ -174,13 +174,30 @@ b {
 header {
   background-color: #2d3040;
   display: flex;
-  justify-content: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-header .menuButton {
+header .menuDiv {
+  width: 3rem;
+}
+header .menuDiv .menuButton {
   width: 2rem;
   height: 2rem;
+}
+header .menuDiv .menu {
+  display: block;
+  position: fixed;
+  left: 0.75rem;
+  top: 6rem;
+  width: 12rem;
+  background-color: #2d3040;
+  text-align: left;
+  border: 2px solid #484A59;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.5rem;
+}
+header .menuDiv .menu-toggle {
+  display: none;
 }
 header div {
   display: flex;

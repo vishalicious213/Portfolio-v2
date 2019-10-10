@@ -1,0 +1,65 @@
+<!-- 
+    Attempted to use CSS Grid to format projects so VISIT SITE and VIEW
+    CODE divs could be formatted to stick to bottom of project card and
+    line up properly, even with cards of differing heights.
+ -->
+
+<div class="cardHolder">
+
+        <div class="card">
+            <div class="screenshot">
+                <img src="img/potluck.jpg">
+            </div>
+            <h3>Build Week 1</h3>
+            <div class="techBox">
+                <p>My first foray into responsive web design, this project refactors a website I had built using HTML and CSS with inline-block and then upgraded with Flexbox. Its now adaptive, with breakpoints for optimal viewing on desktops, tablets and mobile devices. Its now adaptive, with breakpoints for optimal viewing on desktops, tablets and mobile devices</p>
+                <p class="tech"><i title="HTML5" class="fab fa-html5"></i><i title="CSS3" class="fab fa-css3-alt"></i><i title="LESS" class="fab fa-less"></i></p>
+            </div>
+            <div class="offsite">
+                <a href="https://vishalicious213.github.io/4.x-buildWeek1-Potluck-Planner/"><p class="visit"><span class="chevron">></span> VISIT SITE</p></a>
+                <a href="https://github.com/vishalicious213/4.x-buildWeek1-Potluck-Planner"><p class="view"><span class="chevron git"><i class="fab fa-github"></i></span> VIEW CODE</p></a>
+            </div>
+        </div> <!-- card -->
+
+        <div class="card">
+            <div class="screenshot">
+                <img src="img/potluck.jpg">
+            </div>
+            <h3>Build Week 1</h3>
+            <div class="techBox">
+                <p>My first foray into responsive web design, this project refactors a website I had built using HTML and CSS with inline-block and then upgraded with Flexbox. Its now adaptive, with breakpoints for optimal viewing on desktops, tablets and mobile devices.</p>
+                <p class="tech"><i title="HTML5" class="fab fa-html5"></i><i title="CSS3" class="fab fa-css3-alt"></i><i title="LESS" class="fab fa-less"></i></p>
+            </div>
+            <div class="offsite">
+                <a href="https://vishalicious213.github.io/4.x-buildWeek1-Potluck-Planner/"><p class="visit"><span class="chevron">></span> VISIT SITE</p></a>
+                <a href="https://github.com/vishalicious213/4.x-buildWeek1-Potluck-Planner"><p class="view"><span class="chevron git"><i class="fab fa-github"></i></span> VIEW CODE</p></a>
+            </div>
+        </div> <!-- card -->
+
+    </div>  cardHolder
+
+    <!-- CSS -->
+
+    .cardHolder {
+        // display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+        align-items: start;
+        :nth-child(4) {
+            align-items: end;
+        }
+
+        .card {
+            display: grid;
+            // grid-template-columns: 45%;
+            grid-template-rows: 2fr auto auto 1fr;
+            border: 1px solid red;
+
+            img {
+                width: 100%;
+                margin-bottom: 1rem;
+                border-radius: .25rem .25rem 0 0;
+            }
+        } // .card
+    } // .cardHolder

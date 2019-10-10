@@ -29,12 +29,11 @@ function createMenu() {
     menu.appendChild(menuItem2);
     menu.appendChild(menuItem3);
 
-    menu.classList.add("menu");
-
+    menu.classList.add("menu", "menu-toggle");
+        
     menuButton.addEventListener("click", (event) => {
-        anchor.appendChild(menu);
-        menu.classList.toggle("menu");
         menu.classList.toggle("menu-toggle");
+        anchor.appendChild(menu);
     })
 
     // anchor.appendChild(menu);

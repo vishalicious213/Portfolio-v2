@@ -24,22 +24,32 @@ header {
         }
 
         .menu {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             position: fixed;
             left: .75rem;
             top: 6rem;
             width: 12rem;
             background-color: @gray1;
-            text-align: left;
             border: 2px solid @gray4;
             border-radius: 0 .5rem .5rem 0;
             padding: .5rem;
-        }
+
+            a {
+                text-decoration: none;
+            }
+    
+            a:hover {
+                color: white;
+            }
+        } // .menu
+
 
         .menu-toggle {
             display: none;
         }
-    }
+    } // .menuDiv
 
     div {
         display: flex;

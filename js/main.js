@@ -14,24 +14,22 @@ const anchor = document.querySelector(".menuDiv");
 
 function createMenu() {
     const menu = document.createElement("div");
-    const menuItems = document.createElement("ul");
-    const menuItem1 = document.createElement("li"); // home
-    const menuItem2 = document.createElement("li"); // html websites
-    const menuItem3 = document.createElement("li"); // js/dom sites
 
-    menu.appendChild(menuItems);
-    menuItems.appendChild(menuItem1);
-    menuItems.appendChild(menuItem2);
-    menuItems.appendChild(menuItem3);
+    const menuItem1 = document.createElement("a");
+    menuItem1.textContent = "HOME";
+    menuItem1.href = "index.html";
+    const menuItem2 = document.createElement("a");
+    menuItem2.textContent = "HTML / CSS WEBSITES";
+    menuItem2.href = "html_web.html";
+    const menuItem3 = document.createElement("a");
+    menuItem3.textContent = "JAVASCRIPT & DOM SITES";
+    menuItem3.href = "js_dom.html";
+
+    menu.appendChild(menuItem1);
+    menu.appendChild(menuItem2);
+    menu.appendChild(menuItem3);
 
     menu.classList.add("menu");
-
-    menuItem1.textContent = "HOME";
-    menuItem2.textContent = "HTML / CSS WEBSITES";
-    menuItem3.textContent = "JAVASCRIPT & DOM SITES";
-
-    menuItem1.href = "index.html";
-    console.log(menuItem1.href);
 
     menuButton.addEventListener("click", (event) => {
         anchor.appendChild(menu);

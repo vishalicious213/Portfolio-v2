@@ -152,7 +152,8 @@ h3 {
   border-bottom: 1px solid lightslategray;
 }
 p,
-li {
+li,
+.menu a {
   color: gainsboro;
   font-size: 1rem;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -185,16 +186,23 @@ header .menuDiv .menuButton {
   height: 2rem;
 }
 header .menuDiv .menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   position: fixed;
   left: 0.75rem;
   top: 6rem;
   width: 12rem;
   background-color: #2d3040;
-  text-align: left;
   border: 2px solid #484A59;
   border-radius: 0 0.5rem 0.5rem 0;
   padding: 0.5rem;
+}
+header .menuDiv .menu a {
+  text-decoration: none;
+}
+header .menuDiv .menu a:hover {
+  color: white;
 }
 header .menuDiv .menu-toggle {
   display: none;

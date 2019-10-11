@@ -363,6 +363,10 @@ header p {
 .selectedWorks .sectionInfo .offsite .chevron:hover {
   background-color: #484A59;
 }
+.selectedWorks .sectionInfo .offsite a {
+  text-decoration: none;
+  color: white;
+}
 .selectedWorks .sectionInfo .works {
   display: flex;
   flex-flow: wrap;

@@ -336,6 +336,12 @@ header p {
   border: 2.75px solid #c0c1c6;
   border-radius: 15%;
 }
+.selectedWorks .sectionInfo .techBox .axiosImg {
+  width: 1.2rem;
+  background-color: #ffffff00;
+  border: 1px solid #c0c1c6;
+  border-radius: 25%;
+}
 .selectedWorks .sectionInfo .offsite {
   display: flex;
   align-items: baseline;

@@ -68,7 +68,14 @@ container.appendChild(workInfo);
         techBox.appendChild(tech);
 
 // set class names
-// article.classList.add("article");
+container.classList.add("container");
+screenshot.classList.add("screenshot");
+workInfo.classList.add("workInfo");
+offsite.classList.add("offsite");
+visit.classList.add("visit");
+view.classList.add("view");
+techBox.classList.add("techBox");
+tech.classList.add("tech");
 
 // set text content
 // title.textContent = articleData.title;

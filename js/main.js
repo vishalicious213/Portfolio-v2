@@ -42,43 +42,61 @@ function createMenu() {
 
 createMenu();
 
+
 // card component
+function projectCard() {
+    // define new elements
+    const container = document.createElement("div");
+        const screenshot = document.createElement("div");
+            const img = document.createElement("img");
+        const workInfo = document.createElement("div");
+            const projectName = document.createElement("h3");
+            const offsite = document.createElement("div");
+                const visit = document.createElement("a");
+                const view = document.createElement("a");
+            const techBox = document.createElement("div");
+                const descriptor = document.createElement("p");
+                const tech = document.createElement("p");
 
-// define new elements
-const container = document.createElement("div");
-    const screenshot = document.createElement("div");
-    const workInfo = document.createElement("div");
-        const projectName = document.createElement("h3");
-        const offsite = document.createElement("div");
-            const visit = document.createElement("a");
-            const view = document.createElement("a");
-        const techBox = document.createElement("div");
-            const descriptor = document.createElement("p");
-            const tech = document.createElement("p");
+    // setup structure of elements
+    container.appendChild(screenshot);
+        screenshot.appendChild(img);
+    container.appendChild(workInfo);
+        workInfo.appendChild(projectName);
+        workInfo.appendChild(offsite);
+            offsite.appendChild(visit);
+            offsite.appendChild(view);
+        workInfo.appendChild(techBox);
+            techBox.appendChild(descriptor);
+            techBox.appendChild(tech);
 
-// setup structure of elements
-container.appendChild(screenshot);
-container.appendChild(workInfo);
-    workInfo.appendChild(projectName);
-    workInfo.appendChild(offsite);
-        offsite.appendChild(visit);
-        offsite.appendChild(view);
-    workInfo.appendChild(techBox);
-        techBox.appendChild(descriptor);
-        techBox.appendChild(tech);
+    // set class names
+    container.classList.add("container");
+        screenshot.classList.add("screenshot");
+        workInfo.classList.add("workInfo");
+            offsite.classList.add("offsite");
+                visit.classList.add("visit");
+                view.classList.add("view");
+            techBox.classList.add("techBox");
+                tech.classList.add("tech");
 
-// set class names
-container.classList.add("container");
-screenshot.classList.add("screenshot");
-workInfo.classList.add("workInfo");
-offsite.classList.add("offsite");
-visit.classList.add("visit");
-view.classList.add("view");
-techBox.classList.add("techBox");
-tech.classList.add("tech");
+    // set text content
+    // title.textContent = articleData.title;
+    img.src = "img/github-usercard.jpg";
+    projectName.textContent = "Component Test";
+    visit.textContent = "VISIT";
+    visit.href = "https://vishalicious213.github.io/5.4-github-usercard-v2/";
+    view.textContent = "VIEW";
+    view.href = "https://github.com/vishalicious213/5.4-github-usercard-v2";
+    descriptor.textContent = "Accessed the GitHub API using the axios JavaScript library and built a component that creates social cards of my GitHub followers based on returned data.";
+    tech.textContent = "STACK";
 
-// set text content
-// title.textContent = articleData.title;
+    return container;
+}
+
+projectAnchor = document.querySelector(".works");
+projectAnchor.appendChild(projectCard());
+
 
 /*
 <div class="container"> <!-- GitHub Cards -->

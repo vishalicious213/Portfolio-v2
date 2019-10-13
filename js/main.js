@@ -45,7 +45,6 @@ createMenu();
 // card component
 
 // define new elements
-// const article = document.createElement("div");
 const container = document.createElement("div");
     const screenshot = document.createElement("div");
     const workInfo = document.createElement("div");
@@ -58,7 +57,15 @@ const container = document.createElement("div");
             const tech = document.createElement("p");
 
 // setup structure of elements
-// article.appendChild(date);
+container.appendChild(screenshot);
+container.appendChild(workInfo);
+    workInfo.appendChild(projectName);
+    workInfo.appendChild(offsite);
+        offsite.appendChild(visit);
+        offsite.appendChild(view);
+    workInfo.appendChild(techBox);
+        techBox.appendChild(descriptor);
+        techBox.appendChild(tech);
 
 // set class names
 // article.classList.add("article");

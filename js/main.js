@@ -41,3 +41,46 @@ function createMenu() {
 }
 
 createMenu();
+
+// card component
+
+// define new elements
+// const article = document.createElement("div");
+const container = document.createElement("div");
+    const screenshot = document.createElement("div");
+    const workInfo = document.createElement("div");
+        const projectName = document.createElement("h3");
+        const offsite = document.createElement("div");
+            const visit = document.createElement("a");
+            const view = document.createElement("a");
+        const techBox = document.createElement("div");
+            const descriptor = document.createElement("p");
+            const tech = document.createElement("p");
+
+// setup structure of elements
+// article.appendChild(date);
+
+// set class names
+// article.classList.add("article");
+
+// set text content
+// title.textContent = articleData.title;
+
+/*
+<div class="container"> <!-- GitHub Cards -->
+    <div class="screenshot">
+        <img src="img/github-usercard.jpg">
+    </div>                            
+    <div class="workInfo">
+        <h3>Components II</h3>
+        <div class="offsite">
+            <a href="https://vishalicious213.github.io/5.4-github-usercard-v2/"><p class="visit"><span class="chevron">></span> VISIT SITE</p></a>
+            <a href="https://github.com/vishalicious213/5.4-github-usercard-v2"><p class="view"><span class="chevron git"><i class="fab fa-github"></i></span> VIEW CODE</p></a>
+        </div>
+        <div class="techBox">
+            <p>Accessed the GitHub API using the axios JavaScript library and built a component that creates social cards of my GitHub followers based on returned data.</p>
+            <p class="tech"><i title="JavaScript" class="fab fa-js-square"></i><img class="nounImg" title="DOM" src="img/noun_DOM_13029.svg"><img class="axiosImg" title="axios" src="img/axios Page 1.svg"></p>
+        </div>
+    </div>
+</div> <!-- GitHub Cards -->
+*/

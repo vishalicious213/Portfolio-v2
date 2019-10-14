@@ -43,13 +43,15 @@ function createMenu() {
 createMenu();
 
 // project data ----------------------------------------------------
-// index.html
-const featuredProjects = [
-    {img: "img/github-usercard.jpg", name: "Components II", visit: "https://vishalicious213.github.io/5.4-github-usercard-v2/", view: "https://github.com/vishalicious213/5.4-github-usercard-v2", desc: "Accessed the GitHub API using the axios JavaScript library and built a component that creates social cards of my GitHub followers based on returned data.", stack: ["js", "dom", "axios"]},
-    {img: "img/newsfeed.jpg", name: "Components I", visit: "https://vishalicious213.github.io/5.3-Newsfeed-Components-v2/", view: "https://github.com/vishalicious213/5.3-Newsfeed-Components-v2", desc: "Created component to assemble and place articles using JavaScript and the DOM. Button expands/contracts each article. Did same with menu.", stack: ["js", "dom"]},
-    {img: "img/fun-bus-dom.jpg", name: "DOM II", visit: "https://vishalicious213.github.io/5.2-DOM-IIv2/", view: "https://github.com/vishalicious213/5.2-DOM-IIv2", desc: "DOM II utilized the Document Object Model and JavaScript to rebuild the Fun Bus website. Interactive elements include mouseover, click, double-click, scroll effects and more.", stack: ["js", "dom"]},
+// html_web.html
+const htmlWebProjects = [
     {img: "img/potluck.jpg", name: "Build Week 1", visit: "https://vishalicious213.github.io/4.x-buildWeek1-Potluck-Planner/", view: "https://github.com/vishalicious213/4.x-buildWeek1-Potluck-Planner", desc: "A group project - I designed and implemented every aspect of the main website while teammates developed the application and back end. Two other designers' websites were linked as alternate 'themes' in the navigation.", stack: ["html", "css", "less"]},
+    {img: "img/spacewalkers.jpg", name: "Week 2 Sprint Challenge", visit: "https://vishalicious213.github.io/2.5-Sprint-Challenge--Advanced-CSS/", view: "https://github.com/vishalicious213/2.5-Sprint-Challenge--Advanced-CSS", desc: "Space Walkers Magazine used viewport, media queries, LESS imports, mixins, LESS variables and hover states to consolidate my understanding of responsive design and preprocessing.", stack: ["html", "css", "less"]},
+    {img: "img/fun-bus.jpg", name: "Preprocessing II", visit: "https://vishalicious213.github.io/2.4-Preprocessing-II/", view: "https://github.com/vishalicious213/2.4-Preprocessing-II", desc: "The upgraded Fun Bus travel agency added a mobile option, new navigation and header. Buttons utilized preprocessing and a parametric mixin.", stack: ["html", "css", "less"]},
     {img: "img/resume.jpg", name: "Preprocessing I", visit: "https://vishalicious213.github.io/2.3-Preprocessing-I/", view: "https://github.com/vishalicious213/2.3-Preprocessing-I", desc: "This simple, single-page resume made use of preprocessing, nesting, mixins and variables in LESS. Work history items benefit from mouse-over highlighting.", stack: ["html", "css", "less"]},
+    {img: "img/responsive.jpg", name: "Adaptive website", visit: "https://vishalicious213.github.io/2.1-responsive-web-design-I/", view: "https://github.com/vishalicious213/2.1-responsive-web-design-I", desc: "My first adaptive website, this project refactors an HTML/CSS site built with inline-block and upgrades it to Flexbox. It features desktop, tablet and mobile breakpoints.", stack: ["html", "css"]},
+    {img: "img/sprint-1.jpg", name: "Week 1 Sprint Challenge", visit: "https://vishalicious213.github.io/1.5-Sprint-Challenge--User-Interface/", view: "https://github.com/vishalicious213/1.5-Sprint-Challenge--User-Interface", desc: "For my first sprint challenge, I built a missing header (navigation and image) on the home page, updated CSS styling (solving specificity problems) and created an additional About page which linked from the new navigation.", stack: ["html", "css"]},
+    {img: "img/sweet-eats.jpg", name: "Sweet Eats Bakery", visit: "https://codepen.io/vishalicious/pen/WVdwPN", view: "#", desc: "Sweet Eats required knowledge of CSS selectors, properties and inheritance to style the bakery's website. Written in CodePen, the website and code share a page.", stack: ["html", "css"]},
     {img: "img/blog.jpg", name: "Redo From Start", visit: "https://neophyte.home.blog/", view: "", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.", stack: ["html", "css", "wp"]}
 ]
 
@@ -204,14 +206,11 @@ function projectCard(projectObj) {
     return container;
 }
 
-projectAnchor = document.querySelector(".featuredWorks");
-// projectAnchor.appendChild(projectCard());
-
-featuredProjects.forEach(project => {
+htmlWebAnchor = document.querySelector(".htmlWebWorks");
+htmlWebProjects.forEach(project => {
     // console.log(project);
-    projectAnchor.appendChild(projectCard(project));
+    htmlWebAnchor.appendChild(projectCard(project));
 })
-
 // console.log(featuredProjects[0][img][name][visit][view][desc]);
 // console.log(featuredProjects[0]);
 // console.log(featuredProjects[0].img);

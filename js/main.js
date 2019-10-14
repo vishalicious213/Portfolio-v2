@@ -53,7 +53,11 @@ function projectCard() {
             const projectName = document.createElement("h3");
             const offsite = document.createElement("div");
                 const visit = document.createElement("a");
+                    const visitButton = document.createElement("span");
+                    const visitText = document.createElement("p");
                 const view = document.createElement("a");
+                    const viewButton = document.createElement("span");
+                    const viewText = document.createElement("p");
             const techBox = document.createElement("div");
                 const descriptor = document.createElement("p");
                 const tech = document.createElement("p");
@@ -65,7 +69,11 @@ function projectCard() {
         workInfo.appendChild(projectName);
         workInfo.appendChild(offsite);
             offsite.appendChild(visit);
+                visit.appendChild(visitButton);
+                visit.appendChild(visitText);
             offsite.appendChild(view);
+                view.appendChild(viewButton);
+                view.appendChild(viewText);
         workInfo.appendChild(techBox);
             techBox.appendChild(descriptor);
             techBox.appendChild(tech);
@@ -75,21 +83,32 @@ function projectCard() {
         screenshot.classList.add("screenshot");
         workInfo.classList.add("workInfo");
             offsite.classList.add("offsite");
-                visit.classList.add("visit");
-                view.classList.add("view");
+                // visit.classList.add("visit");
+                visitText.classList.add("visit");
+                visitButton.classList.add("chevron");
+                viewText.classList.add("view");
+                viewButton.classList.add("chevron", "git");
             techBox.classList.add("techBox");
                 tech.classList.add("tech");
 
     // set text content
-    // title.textContent = articleData.title;
     img.src = "img/github-usercard.jpg";
     projectName.textContent = "Component Test";
-    visit.textContent = "VISIT";
+    
+    visit.style.display = "flex";
+    // visit.style.alignItems = "baseline";
     visit.href = "https://vishalicious213.github.io/5.4-github-usercard-v2/";
-    view.textContent = "VIEW";
+    visitButton.textContent = ">";
+    visitText.textContent = " VISIT SITE";
+    
+    view.style.display = "flex";
+    //visit.style.alignItems = "baseline";
     view.href = "https://github.com/vishalicious213/5.4-github-usercard-v2";
+    viewButton.textContent = ">";
+    viewText.textContent = " VIEW";
+    
     descriptor.textContent = "Accessed the GitHub API using the axios JavaScript library and built a component that creates social cards of my GitHub followers based on returned data.";
-    tech.textContent = "STACK";
+    tech.textContent = "#";
 
     return container;
 }

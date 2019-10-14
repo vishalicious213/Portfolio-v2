@@ -36,26 +36,10 @@ function createMenu() {
         anchor.appendChild(menu);
     })
 
-    // anchor.appendChild(menu);
     return menu;
 }
 
 createMenu();
-
-// project data ----------------------------------------------------
-// index.html
-const featuredProjects = [
-    {img: "img/github-usercard.jpg", name: "Components II", visit: "https://vishalicious213.github.io/5.4-github-usercard-v2/", view: "https://github.com/vishalicious213/5.4-github-usercard-v2", desc: "Accessed the GitHub API using the axios JavaScript library and built a component that creates social cards of my GitHub followers based on returned data.", stack: ["js", "dom", "axios"]},
-    {img: "img/newsfeed.jpg", name: "Components I", visit: "https://vishalicious213.github.io/5.3-Newsfeed-Components-v2/", view: "https://github.com/vishalicious213/5.3-Newsfeed-Components-v2", desc: "Created component to assemble and place articles using JavaScript and the DOM. Button expands/contracts each article. Did same with menu.", stack: ["js", "dom"]},
-    {img: "img/fun-bus-dom.jpg", name: "DOM II", visit: "https://vishalicious213.github.io/5.2-DOM-IIv2/", view: "https://github.com/vishalicious213/5.2-DOM-IIv2", desc: "DOM II utilized the Document Object Model and JavaScript to rebuild the Fun Bus website. Interactive elements include mouseover, click, double-click, scroll effects and more.", stack: ["js", "dom"]},
-    {img: "img/potluck.jpg", name: "Build Week 1", visit: "https://vishalicious213.github.io/4.x-buildWeek1-Potluck-Planner/", view: "https://github.com/vishalicious213/4.x-buildWeek1-Potluck-Planner", desc: "A group project - I designed and implemented every aspect of the main website while teammates developed the application and back end. Two other designers' websites were linked as alternate 'themes' in the navigation.", stack: ["html", "css", "less"]},
-    {img: "img/resume.jpg", name: "Preprocessing I", visit: "https://vishalicious213.github.io/2.3-Preprocessing-I/", view: "https://github.com/vishalicious213/2.3-Preprocessing-I", desc: "This simple, single-page resume made use of preprocessing, nesting, mixins and variables in LESS. Work history items benefit from mouse-over highlighting.", stack: ["html", "css", "less"]},
-    {img: "img/blog.jpg", name: "Redo From Start", visit: "https://neophyte.home.blog/", view: "", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects.", stack: ["html", "css", "wp"]}
-]
-
-// js_dom.html
-
-// {img: "#", name: "#", visit: "#", view: "#", desc: "#"},
 
 // card component --------------------------------------------------
 function projectCard(projectObj) {
@@ -100,15 +84,6 @@ function projectCard(projectObj) {
         workInfo.appendChild(techBox);
             techBox.appendChild(descriptor);
             techBox.appendChild(tech);
-                // tech.appendChild(htmlIco);
-                // tech.appendChild(cssIco);
-                // tech.appendChild(lessIco);
-                // tech.appendChild(wpIco);
-                // tech.appendChild(jsIco);
-                // tech.appendChild(domIco);
-                // domIco.appendChild(domImg);
-                // tech.appendChild(axiosIco);
-                // axiosIco.appendChild(axiosImg);
 
     // set class names
     container.classList.add("container");
@@ -130,29 +105,24 @@ function projectCard(projectObj) {
                     axiosImg.classList.add("axiosImg");
 
     // set text content
-    // img.src = "img/github-usercard.jpg";
     img.src = projectObj.img;
-    // projectName.textContent = "Component Test";
     projectName.textContent = projectObj.name;
     
     visit.style.display = "flex";
     visit.style.alignItems = "baseline";
-    // visit.href = "https://vishalicious213.github.io/5.4-github-usercard-v2/";
     visit.href = projectObj.visit;
     visitButton.textContent = ">";
     visitText.textContent = " VISIT SITE";
     
     view.style.display = "flex";
     view.style.alignItems = "baseline";
-    // view.href = "https://github.com/vishalicious213/5.4-github-usercard-v2";
     view.href = projectObj.view;
     viewText.textContent = " VIEW CODE";
     
-    // descriptor.textContent = "Accessed the GitHub API using the axios JavaScript library and built a component that creates social cards of my GitHub followers based on returned data.";
     descriptor.textContent = projectObj.desc;
     tech.style.display = "flex";
     tech.style.flexDirection = "column";
-    // tech.textContent = "#";
+
     domImg.src = "img/noun_DOM_13029.svg";
     domImg.style.verticalAlign = "middle";
     axiosImg.src = "img/axios Page 1.svg";
@@ -171,46 +141,38 @@ function projectCard(projectObj) {
     const stackArr = projectObj.stack;
 
     if (stackArr.includes("html")) {
-        console.log(`${projectObj.name} includes html`);
+        // console.log(`${projectObj.name} includes html`);
         tech.appendChild(htmlIco);
     };
     if (stackArr.includes("css")) {
-        console.log(`${projectObj.name} includes css`);
+        // console.log(`${projectObj.name} includes css`);
         tech.appendChild(cssIco);
     };
     if (stackArr.includes("less")) {
-        console.log(`${projectObj.name} includes less`);
+        // console.log(`${projectObj.name} includes less`);
         tech.appendChild(lessIco);
     };
     if (stackArr.includes("wp")) {
-        console.log(`${projectObj.name} includes wp`);
+        // console.log(`${projectObj.name} includes wp`);
         tech.appendChild(wpIco);
     };
     if (stackArr.includes("js")) {
-        console.log(`${projectObj.name} includes js`);
+        // console.log(`${projectObj.name} includes js`);
         tech.appendChild(jsIco);
     };
     if (stackArr.includes("dom")) {
-        console.log(`${projectObj.name} includes dom`);
+        // console.log(`${projectObj.name} includes dom`);
         tech.appendChild(domIco);
         domIco.appendChild(domImg);
     };
     if (stackArr.includes("axios")) {
-        console.log(`${projectObj.name} includes axios`);
+        // console.log(`${projectObj.name} includes axios`);
         tech.appendChild(axiosIco);
         axiosIco.appendChild(axiosImg);
     };
 
     return container;
 }
-
-projectAnchor = document.querySelector(".featuredWorks");
-// projectAnchor.appendChild(projectCard());
-
-featuredProjects.forEach(project => {
-    // console.log(project);
-    projectAnchor.appendChild(projectCard(project));
-})
 
 // console.log(featuredProjects[0][img][name][visit][view][desc]);
 // console.log(featuredProjects[0]);

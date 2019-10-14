@@ -66,6 +66,8 @@ function projectCard() {
                     const lessIco = document.createElement("li");
                     const wpIco = document.createElement("li");
                     const jsIco = document.createElement("li");
+                    const domIco = document.createElement("li");
+                    const domImg = document.createElement("img");
 
     // setup structure of elements
     container.appendChild(screenshot);
@@ -87,6 +89,8 @@ function projectCard() {
                 tech.appendChild(lessIco);
                 tech.appendChild(wpIco);
                 tech.appendChild(jsIco);
+                tech.appendChild(domIco);
+                domIco.appendChild(domImg);
 
     // set class names
     container.classList.add("container");
@@ -104,6 +108,7 @@ function projectCard() {
                     lessIco.classList.add("fab", "fa-less");
                     wpIco.classList.add("fab", "fa-wordpress");
                     jsIco.classList.add("fab", "fa-js-square");
+                    domImg.classList.add("nounImg");
 
     // set text content
     img.src = "img/github-usercard.jpg";
@@ -124,6 +129,9 @@ function projectCard() {
     tech.style.display = "flex";
     tech.style.flexDirection = "column";
     // tech.textContent = "#";
+    domImg.src = "img/noun_DOM_13029.svg";
+    domImg.style.verticalAlign = "middle";
+
 
     return container;
 }

@@ -56,7 +56,7 @@ function projectCard() {
                     const visitButton = document.createElement("span");
                     const visitText = document.createElement("p");
                 const view = document.createElement("a");
-                    const viewButton = document.createElement("span");
+                    const viewButton = document.createElement("i");
                     const viewText = document.createElement("p");
             const techBox = document.createElement("div");
                 const descriptor = document.createElement("p");
@@ -83,11 +83,10 @@ function projectCard() {
         screenshot.classList.add("screenshot");
         workInfo.classList.add("workInfo");
             offsite.classList.add("offsite");
-                // visit.classList.add("visit");
                 visitText.classList.add("visit");
                 visitButton.classList.add("chevron");
                 viewText.classList.add("view");
-                viewButton.classList.add("chevron", "git");
+                viewButton.classList.add("chevron", "git", "fab", "fa-github");
             techBox.classList.add("techBox");
                 tech.classList.add("tech");
 
@@ -96,16 +95,15 @@ function projectCard() {
     projectName.textContent = "Component Test";
     
     visit.style.display = "flex";
-    // visit.style.alignItems = "baseline";
+    visit.style.alignItems = "baseline";
     visit.href = "https://vishalicious213.github.io/5.4-github-usercard-v2/";
     visitButton.textContent = ">";
     visitText.textContent = " VISIT SITE";
     
     view.style.display = "flex";
-    //visit.style.alignItems = "baseline";
+    view.style.alignItems = "baseline";
     view.href = "https://github.com/vishalicious213/5.4-github-usercard-v2";
-    viewButton.textContent = ">";
-    viewText.textContent = " VIEW";
+    viewText.textContent = " VIEW CODE";
     
     descriptor.textContent = "Accessed the GitHub API using the axios JavaScript library and built a component that creates social cards of my GitHub followers based on returned data.";
     tech.textContent = "#";

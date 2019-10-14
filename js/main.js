@@ -42,9 +42,12 @@ function createMenu() {
 
 createMenu();
 
+const featuredProjects = [
+    {img: "img/blog.jpg", name: "Redo From Start", visit: "https://neophyte.home.blog/", view: "", desc: "My programming blog details my experience learning how to think like a programmer, grasp computer science concepts and, of course, tackling coding projects."}
+]
 
 // card component
-function projectCard() {
+function projectCard(projectObj) {
     // define new elements
     const container = document.createElement("div");
         const screenshot = document.createElement("div");
@@ -116,21 +119,26 @@ function projectCard() {
                     axiosImg.classList.add("axiosImg");
 
     // set text content
-    img.src = "img/github-usercard.jpg";
-    projectName.textContent = "Component Test";
+    // img.src = "img/github-usercard.jpg";
+    img.src = projectObj.img;
+    // projectName.textContent = "Component Test";
+    projectName.textContent = projectObj.name;
     
     visit.style.display = "flex";
     visit.style.alignItems = "baseline";
-    visit.href = "https://vishalicious213.github.io/5.4-github-usercard-v2/";
+    // visit.href = "https://vishalicious213.github.io/5.4-github-usercard-v2/";
+    visit.href = projectObj.visit;
     visitButton.textContent = ">";
     visitText.textContent = " VISIT SITE";
     
     view.style.display = "flex";
     view.style.alignItems = "baseline";
-    view.href = "https://github.com/vishalicious213/5.4-github-usercard-v2";
+    // view.href = "https://github.com/vishalicious213/5.4-github-usercard-v2";
+    view.href = projectObj.view;
     viewText.textContent = " VIEW CODE";
     
-    descriptor.textContent = "Accessed the GitHub API using the axios JavaScript library and built a component that creates social cards of my GitHub followers based on returned data.";
+    // descriptor.textContent = "Accessed the GitHub API using the axios JavaScript library and built a component that creates social cards of my GitHub followers based on returned data.";
+    descriptor.textContent = projectObj.desc;
     tech.style.display = "flex";
     tech.style.flexDirection = "column";
     // tech.textContent = "#";
@@ -152,7 +160,31 @@ function projectCard() {
 }
 
 projectAnchor = document.querySelector(".works");
-projectAnchor.appendChild(projectCard());
+// projectAnchor.appendChild(projectCard());
+
+featuredProjects.forEach(project => {
+    console.log(project);
+    projectAnchor.appendChild(projectCard(project));
+})
+// console.log(featuredProjects[0][img][name][visit][view][desc]);
+// console.log(featuredProjects[0]);
+// console.log(featuredProjects[0].img);
+// console.log(featuredProjects[0].name);
+// console.log(featuredProjects[0].visit);
+// console.log(featuredProjects[0].view);
+// console.log(featuredProjects[0].desc);
+
+/*
+img.src
+projectName.textContent
+visit.href
+view.href
+descriptor.textContent
+
+let featuredProjects = [
+    {img: "img/blog.jpg";}
+]
+*/
 
 
 /*

@@ -102,15 +102,15 @@ function projectCard(projectObj) {
         workInfo.appendChild(techBox);
             techBox.appendChild(descriptor);
             techBox.appendChild(tech);
-                tech.appendChild(htmlIco);
-                tech.appendChild(cssIco);
-                tech.appendChild(lessIco);
-                tech.appendChild(wpIco);
-                tech.appendChild(jsIco);
-                tech.appendChild(domIco);
-                domIco.appendChild(domImg);
-                tech.appendChild(axiosIco);
-                axiosIco.appendChild(axiosImg);
+                // tech.appendChild(htmlIco);
+                // tech.appendChild(cssIco);
+                // tech.appendChild(lessIco);
+                // tech.appendChild(wpIco);
+                // tech.appendChild(jsIco);
+                // tech.appendChild(domIco);
+                // domIco.appendChild(domImg);
+                // tech.appendChild(axiosIco);
+                // axiosIco.appendChild(axiosImg);
 
     // set class names
     container.classList.add("container");
@@ -172,27 +172,36 @@ function projectCard(projectObj) {
 
     const stackArr = projectObj.stack;
 
-    if (stackArr.includes("html")) (
-        console.log(`${projectObj.name} includes html`)
-    );
-    if (stackArr.includes("css")) (
-        console.log(`${projectObj.name} includes css`)
-    );
-    if (stackArr.includes("less")) (
-        console.log(`${projectObj.name} includes less`)
-    );
-    if (stackArr.includes("wp")) (
-        console.log(`${projectObj.name} includes wp`)
-    );
-    if (stackArr.includes("js")) (
-        console.log(`${projectObj.name} includes js`)
-    );
-    if (stackArr.includes("dom")) (
-        console.log(`${projectObj.name} includes dom`)
-    );
-    if (stackArr.includes("axios")) (
-        console.log(`${projectObj.name} includes axios`)
-    );
+    if (stackArr.includes("html")) {
+        console.log(`${projectObj.name} includes html`);
+        tech.appendChild(htmlIco);
+    };
+    if (stackArr.includes("css")) {
+        console.log(`${projectObj.name} includes css`);
+        tech.appendChild(cssIco);
+    };
+    if (stackArr.includes("less")) {
+        console.log(`${projectObj.name} includes less`);
+        tech.appendChild(lessIco);
+    };
+    if (stackArr.includes("wp")) {
+        console.log(`${projectObj.name} includes wp`);
+        tech.appendChild(wpIco);
+    };
+    if (stackArr.includes("js")) {
+        console.log(`${projectObj.name} includes js`);
+        tech.appendChild(jsIco);
+    };
+    if (stackArr.includes("dom")) {
+        console.log(`${projectObj.name} includes dom`);
+        tech.appendChild(domIco);
+        domIco.appendChild(domImg);
+    };
+    if (stackArr.includes("axios")) {
+        console.log(`${projectObj.name} includes axios`);
+        tech.appendChild(axiosIco);
+        axiosIco.appendChild(axiosImg);
+    };
 
     return container;
 }

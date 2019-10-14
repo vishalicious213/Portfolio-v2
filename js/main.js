@@ -78,9 +78,11 @@ function projectCard(projectObj) {
             offsite.appendChild(visit);
                 visit.appendChild(visitButton);
                 visit.appendChild(visitText);
-            offsite.appendChild(view);
-                view.appendChild(viewButton);
-                view.appendChild(viewText);
+            if (projectObj.view != "#") {
+                offsite.appendChild(view);
+                    view.appendChild(viewButton);
+                    view.appendChild(viewText);
+            }
         workInfo.appendChild(techBox);
             techBox.appendChild(descriptor);
             techBox.appendChild(tech);

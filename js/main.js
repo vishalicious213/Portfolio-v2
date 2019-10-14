@@ -139,6 +139,14 @@ function projectCard() {
     axiosImg.src = "img/axios Page 1.svg";
     axiosImg.style.verticalAlign = "middle";
 
+    htmlIco.title = "HTML5";
+    cssIco.title = "CSS3";
+    lessIco.title = "LESS";
+    wpIco.title = "Wordpress";
+    jsIco.title = "JavaScript";
+    domImg.title = "DOM";
+    axiosImg.title = "axios";
+
 
     return container;
 }

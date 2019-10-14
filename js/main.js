@@ -68,6 +68,8 @@ function projectCard() {
                     const jsIco = document.createElement("li");
                     const domIco = document.createElement("li");
                     const domImg = document.createElement("img");
+                    const axiosIco = document.createElement("li");
+                    const axiosImg = document.createElement("img");
 
     // setup structure of elements
     container.appendChild(screenshot);
@@ -91,6 +93,8 @@ function projectCard() {
                 tech.appendChild(jsIco);
                 tech.appendChild(domIco);
                 domIco.appendChild(domImg);
+                tech.appendChild(axiosIco);
+                axiosIco.appendChild(axiosImg);
 
     // set class names
     container.classList.add("container");
@@ -109,6 +113,7 @@ function projectCard() {
                     wpIco.classList.add("fab", "fa-wordpress");
                     jsIco.classList.add("fab", "fa-js-square");
                     domImg.classList.add("nounImg");
+                    axiosImg.classList.add("axiosImg");
 
     // set text content
     img.src = "img/github-usercard.jpg";
@@ -131,6 +136,8 @@ function projectCard() {
     // tech.textContent = "#";
     domImg.src = "img/noun_DOM_13029.svg";
     domImg.style.verticalAlign = "middle";
+    axiosImg.src = "img/axios Page 1.svg";
+    axiosImg.style.verticalAlign = "middle";
 
 
     return container;

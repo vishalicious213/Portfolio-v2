@@ -60,7 +60,12 @@ function projectCard() {
                     const viewText = document.createElement("p");
             const techBox = document.createElement("div");
                 const descriptor = document.createElement("p");
-                const tech = document.createElement("p");
+                const tech = document.createElement("ul");
+                    const htmlIco = document.createElement("li");
+                    const cssIco = document.createElement("li");
+                    const lessIco = document.createElement("li");
+                    const wpIco = document.createElement("li");
+                    const jsIco = document.createElement("li");
 
     // setup structure of elements
     container.appendChild(screenshot);
@@ -77,6 +82,11 @@ function projectCard() {
         workInfo.appendChild(techBox);
             techBox.appendChild(descriptor);
             techBox.appendChild(tech);
+                tech.appendChild(htmlIco);
+                tech.appendChild(cssIco);
+                tech.appendChild(lessIco);
+                tech.appendChild(wpIco);
+                tech.appendChild(jsIco);
 
     // set class names
     container.classList.add("container");
@@ -89,6 +99,11 @@ function projectCard() {
                 viewButton.classList.add("chevron", "git", "fab", "fa-github");
             techBox.classList.add("techBox");
                 tech.classList.add("tech");
+                    htmlIco.classList.add("fab", "fa-html5");
+                    cssIco.classList.add("fab", "fa-css3-alt");
+                    lessIco.classList.add("fab", "fa-less");
+                    wpIco.classList.add("fab", "fa-wordpress");
+                    jsIco.classList.add("fab", "fa-js-square");
 
     // set text content
     img.src = "img/github-usercard.jpg";
@@ -106,7 +121,9 @@ function projectCard() {
     viewText.textContent = " VIEW CODE";
     
     descriptor.textContent = "Accessed the GitHub API using the axios JavaScript library and built a component that creates social cards of my GitHub followers based on returned data.";
-    tech.textContent = "#";
+    tech.style.display = "flex";
+    tech.style.flexDirection = "column";
+    // tech.textContent = "#";
 
     return container;
 }
@@ -116,6 +133,20 @@ projectAnchor.appendChild(projectCard());
 
 
 /*
+
+font awesome: html, css, less, js, wp
+<i title="HTML5" class="fab fa-html5"></i>
+<i title="CSS3" class="fab fa-css3-alt"></i>
+<i title="LESS" class="fab fa-less"></i>
+<i title="Wordpress" class="fab fa-wordpress"></i>
+<i title="JavaScript" class="fab fa-js-square"></i>
+
+noun: dom
+<img class="nounImg" title="DOM" src="img/noun_DOM_13029.svg">
+
+local:
+<img class="axiosImg" title="axios" src="img/axios Page 1.svg">
+
 <div class="container"> <!-- GitHub Cards -->
     <div class="screenshot">
         <img src="img/github-usercard.jpg">

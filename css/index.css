@@ -153,7 +153,8 @@ h3 {
 }
 p,
 li,
-.menu a {
+.menu a,
+.keyTech {
   color: gainsboro;
   font-size: 1rem;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -316,7 +317,11 @@ header p {
 }
 .selectedWorks .sectionInfo {
   width: 85%;
-  flex-direction: column;
+}
+.selectedWorks .sectionInfo .keyTech {
+  display: grid;
+  grid-template-columns: 5rem auto;
+  grid-row-gap: 0.25rem;
 }
 .selectedWorks .sectionInfo .techBox {
   display: flex;

@@ -22,7 +22,7 @@ function createMenu() {
     menuItem2.textContent = "HTML / CSS WEBSITES";
     menuItem2.href = "html_web.html";
     const menuItem3 = document.createElement("a");
-    menuItem3.textContent = "JAVASCRIPT & DOM SITES";
+    menuItem3.textContent = "JAVASCRIPT & REACT SITES";
     menuItem3.href = "js_dom.html";
 
     menu.appendChild(menuItem1);
@@ -68,6 +68,7 @@ function projectCard(projectObj) {
                     const domImg = document.createElement("img");
                     const axiosIco = document.createElement("li");
                     const axiosImg = document.createElement("img");
+                    const reactIco = document.createElement("li");
 
     // setup structure of elements
     container.appendChild(screenshot);
@@ -105,6 +106,7 @@ function projectCard(projectObj) {
                     jsIco.classList.add("fab", "fa-js-square");
                     domImg.classList.add("nounImg");
                     axiosImg.classList.add("axiosImg");
+                    reactIco.classList.add("fab", "fa-react");
 
     // set text content
     img.src = projectObj.img;
@@ -137,6 +139,7 @@ function projectCard(projectObj) {
     jsIco.title = "JavaScript";
     domImg.title = "DOM";
     axiosImg.title = "axios";
+    reactIco.title = "React";
 
     // tech stack icons
 
@@ -171,6 +174,10 @@ function projectCard(projectObj) {
         // console.log(`${projectObj.name} includes axios`);
         tech.appendChild(axiosIco);
         axiosIco.appendChild(axiosImg);
+    };
+    if (stackArr.includes("react")) {
+        // console.log(`${projectObj.name} includes react`);
+        tech.appendChild(reactIco);
     };
 
     return container;

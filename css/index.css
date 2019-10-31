@@ -351,6 +351,18 @@ header p {
   border: 1px solid #c0c1c6;
   border-radius: 25%;
 }
+.selectedWorks .sectionInfo .title {
+  font-size: 1rem;
+  border-bottom: none;
+  margin: 0;
+  padding-bottom: 0;
+}
+.selectedWorks .sectionInfo .type {
+  color: darkgray;
+  border-bottom: 1px solid lightslategray;
+  margin: 0px 0px 1rem;
+  padding-bottom: 1rem;
+}
 .selectedWorks .sectionInfo .offsite {
   display: flex;
   align-items: baseline;

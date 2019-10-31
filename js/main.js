@@ -49,6 +49,7 @@ function projectCard(projectObj) {
             const img = document.createElement("img");
         const workInfo = document.createElement("div");
             const projectName = document.createElement("h3");
+            const projectType = document.createElement("p");
             const offsite = document.createElement("div");
                 const visit = document.createElement("a");
                     const visitButton = document.createElement("span");
@@ -75,6 +76,7 @@ function projectCard(projectObj) {
         screenshot.appendChild(img);
     container.appendChild(workInfo);
         workInfo.appendChild(projectName);
+        workInfo.appendChild(projectType);
         workInfo.appendChild(offsite);
             offsite.appendChild(visit);
                 visit.appendChild(visitButton);
@@ -92,6 +94,8 @@ function projectCard(projectObj) {
     container.classList.add("container");
         screenshot.classList.add("screenshot");
         workInfo.classList.add("workInfo");
+            projectName.classList.add("title");
+            projectType.classList.add("type");
             offsite.classList.add("offsite");
                 visitText.classList.add("visit");
                 visitButton.classList.add("chevron");
@@ -111,6 +115,7 @@ function projectCard(projectObj) {
     // set text content
     img.src = projectObj.img;
     projectName.textContent = projectObj.name;
+    projectType.textContent = projectObj.type;
     
     visit.style.display = "flex";
     visit.style.alignItems = "baseline";
